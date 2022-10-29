@@ -1,19 +1,19 @@
 plugins {
-    id ("com.android.application")
-    id ("org.jetbrains.kotlin.android")
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
     id("dagger.hilt.android.plugin")
     id("kotlin-kapt")
 }
 
 android {
-    compileSdk =ProjectConfig.compileSdk
+    compileSdk = ProjectConfig.compileSdk
 
     defaultConfig {
-        applicationId =ProjectConfig.appId
-        minSdk =ProjectConfig.minSdk
+        applicationId = ProjectConfig.appId
+        minSdk = ProjectConfig.minSdk
         targetSdk = ProjectConfig.targetSdk
-        versionCode =ProjectConfig.versionCode
-        versionName =ProjectConfig.versionName
+        versionCode = ProjectConfig.versionCode
+        versionName = ProjectConfig.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
